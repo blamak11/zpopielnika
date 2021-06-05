@@ -1,0 +1,33 @@
+{% include "headers.html" %}
+
+<div class="contact-main">
+    <h2>KONTAKT</h2>
+    <h4>Chcesz wysłać wiadomość autorowi?</h4>
+    <div class="form-wrapper">
+        <form name="sentMessage" id="contactForm" action="/contact" method="post" novalidate>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                    <label>Twój adres email</label>
+                    <input type="email" class="form-control" placeholder="Wpisz swój adres email..." id="email" name="email" required
+                           data-validation-required-message="Wpisz swój adres email.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                    <label>Wiadomość do autora</label>
+                    <textarea rows="5" class="form-control" placeholder="Miejsce na wiadomość..." id="message" name="message" required
+                              data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <button type="submit" class="btn-warning btn-lg" id="sendMessageButton">WYŚLIJ</button>
+        </form>
+    </div>
+    </div>
+
+
+</body>
+</html>
